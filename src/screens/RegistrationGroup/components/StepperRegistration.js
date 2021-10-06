@@ -1,7 +1,10 @@
 import React from 'react';
 import {useRoute} from '@react-navigation/core';
 import Stepper from 'src/common/components/Stepper';
-import {PERSONAL_INFORMATION} from 'src/navigation/constants';
+import {
+  LOCATION_INFORMATION,
+  PERSONAL_INFORMATION,
+} from 'src/navigation/constants';
 
 const STEPS = [
   {
@@ -9,7 +12,7 @@ const STEPS = [
     label: 'Personal Information',
   },
   {
-    id: '2',
+    id: LOCATION_INFORMATION,
     label: 'Location Information',
   },
   {

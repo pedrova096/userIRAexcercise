@@ -2,9 +2,10 @@ import React from 'react';
 import {View} from 'react-native';
 import Button from 'src/common/components/Button';
 import Text from 'src/common/components/Text';
+import {PERSONAL_INFORMATION} from 'src/navigation/constants';
 import styles from './styles';
 
-const OnBoarding = () => {
+const OnBoarding = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.welcomeContainer}>
@@ -15,7 +16,12 @@ const OnBoarding = () => {
           User IRA waits for you!
         </Text>
       </View>
-      <Button fullWidth text="Register" style={styles.registerButton} />
+      <Button
+        fullWidth
+        text="Register"
+        style={styles.registerButton}
+        onPress={() => navigation.navigate(PERSONAL_INFORMATION)}
+      />
       <Button fullWidth text="Go to Login" mode="outline" />
     </View>
   );

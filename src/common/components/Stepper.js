@@ -44,13 +44,14 @@ const CircleProgress = ({
 const Stepper = ({list = [], index = 0}) => {
   const currentLabel = list[index]?.label;
   const nextLabel = list[index + 1]?.label;
+  const percentage = (index + 1) / list.length;
   return (
     <View style={styles.container}>
       <View style={styles.circleContainer}>
         <CircleProgress
           size={70}
           strokeWidth={6}
-          percentage={0.25}
+          percentage={percentage}
           colorFront={colors.light}
           colorBack={OpacityHex(colors.light, 0.4)}
         />

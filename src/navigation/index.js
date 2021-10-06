@@ -2,6 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
+  CONTACT_INFORMATION,
   LOCATION_INFORMATION,
   ON_BOARDING,
   PERSONAL_INFORMATION,
@@ -10,6 +11,7 @@ import headerOptions, {backgroundPrimary, headerBack} from './header';
 import OnBoarding from 'src/screens/OnBoarding';
 import PersonalInfo from 'src/screens/RegistrationGroup/PersonalInfo';
 import LocationInfo from 'src/screens/RegistrationGroup/LocationInfo';
+import ContactInfo from 'src/screens/RegistrationGroup/ContactInfo';
 
 const Navigation = () => {
   return (
@@ -33,12 +35,11 @@ const RootNavigator = () => {
       />
       <Stack.Group screenOptions={{...headerOptions, ...backgroundPrimary}}>
         <Stack.Screen name={PERSONAL_INFORMATION} component={PersonalInfo} />
+        <Stack.Screen name={LOCATION_INFORMATION} component={LocationInfo} />
         <Stack.Screen
-          name={LOCATION_INFORMATION}
-          component={LocationInfo}
-          options={{
-            ...headerBack,
-          }}
+          name={CONTACT_INFORMATION}
+          component={ContactInfo}
+          options={headerBack}
         />
       </Stack.Group>
     </Stack.Navigator>

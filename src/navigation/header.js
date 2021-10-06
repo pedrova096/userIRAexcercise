@@ -1,5 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
+import Arrow from 'src/common/components/Arrow';
 import LogoSvg from 'src/common/components/LogoSvg';
 import Text from 'src/common/components/Text';
 import {colors} from 'src/constants/theme';
@@ -25,10 +26,14 @@ const headerOptions = {
   headerBackVisible: false,
   contentStyle: styles.backgroundLight,
   headerShadowVisible: false,
+  headerTintColor: colors.light,
 };
 
 export const backgroundPrimary = {
   headerStyle: styles.backgroundPrimary,
 };
 
+export const headerBack = {
+  headerBackVisible: true,
+};
 export default headerOptions;

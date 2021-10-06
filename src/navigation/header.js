@@ -20,15 +20,14 @@ const headerOptions = {
     </View>
   ),
   headerTitleAlign: 'center',
-  headerStyle: {borderBottomWidth: 0},
   headerLeft: () => null,
   headerRight: () => null,
-  cardStyle: {backgroundColor: colors.light},
+  headerBackVisible: false,
+  contentStyle: styles.backgroundLight,
   headerShadowVisible: false,
 };
 
 export const backgroundPrimary = {
-  cardStyle: styles.backgroundPrimary,
   headerStyle: styles.backgroundPrimary,
 };
 

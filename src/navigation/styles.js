@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   },
   headerTitleText: {fontSize: 20, color: colors.light},
   headerTitleLogo: {width: 20},
+  backgroundLight: {backgroundColor: colors.light},
 });
 
 export default styles;

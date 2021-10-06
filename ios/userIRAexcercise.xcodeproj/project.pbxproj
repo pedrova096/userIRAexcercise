@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* userIRAexcerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* userIRAexcerciseTests.m */; };
+		0CB2A78F9EB8033765348E84 /* libPods-userIRAexcercise-userIRAexcerciseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C72C4DAD095ECB30C7DDE9C /* libPods-userIRAexcercise-userIRAexcerciseTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B00BB2C1C3FC43B829B96ED0 /* libPods-userIRAexcercise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A4E61CFBD4CBE3F94E8ED /* libPods-userIRAexcercise.a */; };
-		F22561E17E5E288689E1A9B4 /* libPods-userIRAexcercise-userIRAexcerciseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069C14883D782BEE231D73BA /* libPods-userIRAexcercise-userIRAexcerciseTests.a */; };
+		DC697F7482E94655F59CEB37 /* libPods-userIRAexcercise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E421C67B2470BA6AA831518F /* libPods-userIRAexcercise.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,20 @@
 		00E356EE1AD99517003FC87E /* userIRAexcerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userIRAexcerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* userIRAexcerciseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userIRAexcerciseTests.m; sourceTree = "<group>"; };
-		069C14883D782BEE231D73BA /* libPods-userIRAexcercise-userIRAexcerciseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-userIRAexcercise-userIRAexcerciseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* userIRAexcercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = userIRAexcercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = userIRAexcercise/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = userIRAexcercise/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = userIRAexcercise/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = userIRAexcercise/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = userIRAexcercise/main.m; sourceTree = "<group>"; };
-		2647AB68DD0C0D2437C69047 /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig"; sourceTree = "<group>"; };
-		4C2A4E61CFBD4CBE3F94E8ED /* libPods-userIRAexcercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-userIRAexcercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E5F1A261C2C9BB3D81265F2 /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		315457F97408A838EC866DCC /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37EA3CE4CC3509F6B3A4A83C /* Pods-userIRAexcercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise.debug.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise.debug.xcconfig"; sourceTree = "<group>"; };
+		5C72C4DAD095ECB30C7DDE9C /* libPods-userIRAexcercise-userIRAexcerciseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-userIRAexcercise-userIRAexcerciseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = userIRAexcercise/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AA2A5437BE0043B517463E0E /* Pods-userIRAexcercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise.debug.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F7614F503E801589FB91BE /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig"; sourceTree = "<group>"; };
+		E421C67B2470BA6AA831518F /* libPods-userIRAexcercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-userIRAexcercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84BB29C438A5D022D9A2346 /* Pods-userIRAexcercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise.release.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F2E4DCB109D03E1E82F6F53E /* Pods-userIRAexcercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userIRAexcercise.release.xcconfig"; path = "Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22561E17E5E288689E1A9B4 /* libPods-userIRAexcercise-userIRAexcerciseTests.a in Frameworks */,
+				0CB2A78F9EB8033765348E84 /* libPods-userIRAexcercise-userIRAexcerciseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B00BB2C1C3FC43B829B96ED0 /* libPods-userIRAexcercise.a in Frameworks */,
+				DC697F7482E94655F59CEB37 /* libPods-userIRAexcercise.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,22 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4C2A4E61CFBD4CBE3F94E8ED /* libPods-userIRAexcercise.a */,
-				069C14883D782BEE231D73BA /* libPods-userIRAexcercise-userIRAexcerciseTests.a */,
+				E421C67B2470BA6AA831518F /* libPods-userIRAexcercise.a */,
+				5C72C4DAD095ECB30C7DDE9C /* libPods-userIRAexcercise-userIRAexcerciseTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2E5E20C37E0AFECB331A3884 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AA2A5437BE0043B517463E0E /* Pods-userIRAexcercise.debug.xcconfig */,
-				F2E4DCB109D03E1E82F6F53E /* Pods-userIRAexcercise.release.xcconfig */,
-				7E5F1A261C2C9BB3D81265F2 /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */,
-				2647AB68DD0C0D2437C69047 /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -133,7 +121,7 @@
 				00E356EF1AD99517003FC87E /* userIRAexcerciseTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				2E5E20C37E0AFECB331A3884 /* Pods */,
+				FEFDED5098A68962D59AD83A /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +137,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FEFDED5098A68962D59AD83A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37EA3CE4CC3509F6B3A4A83C /* Pods-userIRAexcercise.debug.xcconfig */,
+				E84BB29C438A5D022D9A2346 /* Pods-userIRAexcercise.release.xcconfig */,
+				315457F97408A838EC866DCC /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */,
+				B2F7614F503E801589FB91BE /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "userIRAexcerciseTests" */;
 			buildPhases = (
-				ED93E8DD81710201BDD66BD4 /* [CP] Check Pods Manifest.lock */,
+				67FB5716E3430C8921B73196 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				6D4197A1318833BD169D427D /* [CP] Embed Pods Frameworks */,
-				82D19B44BF9B43B4DB1E0235 /* [CP] Copy Pods Resources */,
+				12180B86AF8388C4B78F9FA4 /* [CP] Embed Pods Frameworks */,
+				D7718E304E356D9E6C50816F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "userIRAexcercise" */;
 			buildPhases = (
-				C93D33A791A3E900816A2BE7 /* [CP] Check Pods Manifest.lock */,
+				8AAD74DC4D8496C87AF79D83 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E9C390F0FF23E4A12B172AD1 /* [CP] Embed Pods Frameworks */,
-				B47F33F812F88230DA296303 /* [CP] Copy Pods Resources */,
+				2CBBB80F0F8B1B64265701F5 /* [CP] Embed Pods Frameworks */,
+				451FCF393E7FFAC22A1FA76F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,7 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		6D4197A1318833BD169D427D /* [CP] Embed Pods Frameworks */ = {
+		12180B86AF8388C4B78F9FA4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,24 +282,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82D19B44BF9B43B4DB1E0235 /* [CP] Copy Pods Resources */ = {
+		2CBBB80F0F8B1B64265701F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B47F33F812F88230DA296303 /* [CP] Copy Pods Resources */ = {
+		451FCF393E7FFAC22A1FA76F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,7 +316,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C93D33A791A3E900816A2BE7 /* [CP] Check Pods Manifest.lock */ = {
+		67FB5716E3430C8921B73196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-userIRAexcercise-userIRAexcerciseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAD74DC4D8496C87AF79D83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,43 +360,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9C390F0FF23E4A12B172AD1 /* [CP] Embed Pods Frameworks */ = {
+		D7718E304E356D9E6C50816F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise/Pods-userIRAexcercise-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED93E8DD81710201BDD66BD4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-userIRAexcercise-userIRAexcerciseTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-userIRAexcercise-userIRAexcerciseTests/Pods-userIRAexcercise-userIRAexcerciseTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E5F1A261C2C9BB3D81265F2 /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */;
+			baseConfigurationReference = 315457F97408A838EC866DCC /* Pods-userIRAexcercise-userIRAexcerciseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2647AB68DD0C0D2437C69047 /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */;
+			baseConfigurationReference = B2F7614F503E801589FB91BE /* Pods-userIRAexcercise-userIRAexcerciseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA2A5437BE0043B517463E0E /* Pods-userIRAexcercise.debug.xcconfig */;
+			baseConfigurationReference = 37EA3CE4CC3509F6B3A4A83C /* Pods-userIRAexcercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2E4DCB109D03E1E82F6F53E /* Pods-userIRAexcercise.release.xcconfig */;
+			baseConfigurationReference = E84BB29C438A5D022D9A2346 /* Pods-userIRAexcercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -23,30 +23,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
   },
-  itemContainer: {
-    marginBottom: sizes.verticalSpacing,
-  },
-  itemTitle: {
-    fontSize: sizes.fontSize.head4,
-    marginBottom: sizes.verticalSpacing / 4,
-  },
-  itemContentContainer: {
-    borderRadius: sizes.radius.m,
-    backgroundColor: OpacityHex(colors.primary, 0.15),
-    padding: sizes.verticalSpacing,
-    paddingBottom: 0,
-  },
-  itemContent: {
-    flexDirection: 'row',
-    marginBottom: sizes.verticalSpacing,
-  },
-  itemContentLabel: {
-    color: colors.gray,
-  },
   registerButton: {
     marginBottom: sizes.verticalSpacing,
   },
-  // itemContentValue
 });
 
 export default styles;

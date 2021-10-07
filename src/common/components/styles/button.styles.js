@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   },
   disabled: {
-    opacity: 0.5,
+    backgroundColor: colors.lightGray,
   },
   text: {
     textAlign: 'center',
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1.1,
   },
   disabledText: {
+    color: colors.gray,
     // color: colors.secondary_75,
   },
   loader: {

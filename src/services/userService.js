@@ -8,14 +8,32 @@ const userKeys = {
   filters: f => userKeys.all.concat(f !== undefined ? f : []),
 };
 
-export const useAddUser = ({onSuccess}) => {
+export const useAddUser = ({onSuccess, ...options}) => {
   const queryClient = useQueryClient();
 
   return useMutation(
     async user => fetchApi.post({body: user, url: USERS_ENDPOINT}),
     {
+      ...options,
       onSuccess: res => {
         queryClient.setQueryData(userKeys.oneUser(res.id), res);
+        if (onSuccess) {
+          onSuccess(res);
+        }
+      },
+    },
+  );
+};
+
+export const useEditUser = ({id, onSuccess, ...options}) => {
+  const queryClient = useQueryClient();
+  return useMutation(
+    async user => fetchApi.patch({body: user, url: `${USERS_ENDPOINT}/${id}`}),
+    {
+      ...options,
+      onSuccess: res => {
+        console.log({res, id});
+        queryClient.setQueryData(userKeys.oneUser(id), res);
         if (onSuccess) {
           onSuccess(res);
         }

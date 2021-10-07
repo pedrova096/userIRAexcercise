@@ -5,6 +5,7 @@ import {
   LOCATION_INFORMATION,
   PERSONAL_INFORMATION,
   SUCCESS_REGISTRATION,
+  USER_DETAIL,
 } from 'src/navigation/constants';
 import headerOptions, {
   headerBackgroundPrimary,
@@ -19,7 +20,7 @@ import {
   REQUIRED_EMAIL,
   REQUIRED_STRING,
 } from 'src/constants/schemas';
-import {useAddUser} from 'src/services/userService';
+import {useAddUser, useEditUser} from 'src/services/userService';
 import {CommonActions} from '@react-navigation/routers';
 
 const Stack = createNativeStackNavigator();
@@ -45,7 +46,9 @@ const validationSchema = createValidationSchema({
 });
 
 const Registration = ({route: {params}, navigation}) => {
-  const {mutateAsync} = useAddUser({
+  const userId = params?.data?.id;
+  const isUpdate = !!userId;
+  const {mutateAsync: addUser} = useAddUser({
     onSuccess: res =>
       navigation.dispatch(state => {
         return CommonActions.reset({
@@ -63,10 +66,14 @@ const Registration = ({route: {params}, navigation}) => {
         });
       }),
   });
+  const {mutateAsync: editUser} = useEditUser({
+    id: userId,
+    onSuccess: () => navigation.navigate(USER_DETAIL, {id: userId}),
+  });
   return (
     <Formik
-      initialValues={initialValues}
-      onSubmit={mutateAsync}
+      initialValues={isUpdate ? params.data : initialValues}
+      onSubmit={isUpdate ? editUser : addUser}
       validateOnMount
       validationSchema={validationSchema}>
       <Stack.Navigator

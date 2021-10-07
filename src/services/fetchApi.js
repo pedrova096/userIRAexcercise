@@ -9,7 +9,7 @@ const fetchApi = async ({
   },
 }) => {
   try {
-    if (body && method === 'POST') {
+    if (body && method !== 'GET') {
       body = JSON.stringify(body);
     }
     if (url.startsWith('/')) {
@@ -27,5 +27,6 @@ const fetchApi = async ({
 
 fetchApi.post = args => fetchApi({...args, method: 'POST'});
 fetchApi.get = args => fetchApi({...args, method: 'GET'});
+fetchApi.patch = args => fetchApi({...args, method: 'PATCH'});
 
 export default fetchApi;

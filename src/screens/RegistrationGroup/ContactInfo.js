@@ -9,8 +9,7 @@ import styles from './styles/personalInfo.styles';
 
 const ContactInfo = ({navigation}) => {
   const formik = useFormikContext();
-  const {handleFieldProps, validateErrorFields} = useFormikField({formik});
-  const continueDisabled = !validateErrorFields(['dayOfBirth', 'mobileNumber']);
+  const {handleFieldProps} = useFormikField({formik});
   return (
     <View>
       <StepperRegistration />
@@ -19,12 +18,13 @@ const ContactInfo = ({navigation}) => {
         <Input
           label="Mobile Number"
           keyboardType="number-pad"
-          {...handleFieldProps('mobileNumber')}
+          {...handleFieldProps('mobile')}
         />
         <Button
           text="¡Create!"
-          disabled={continueDisabled}
-          onPress={() => navigation.navigate()}
+          disabled={!formik.isValid}
+          onPress={formik.submitForm}
+          loading={formik.isSubmitting}
         />
       </View>
     </View>

@@ -4,9 +4,10 @@ import {
   CONTACT_INFORMATION,
   LOCATION_INFORMATION,
   PERSONAL_INFORMATION,
+  SUCCESS_REGISTRATION,
 } from 'src/navigation/constants';
 import headerOptions, {
-  backgroundPrimary,
+  headerBackgroundPrimary,
   headerBack,
 } from 'src/navigation/header';
 import PersonalInfo from 'src/screens/RegistrationGroup/PersonalInfo';
@@ -18,6 +19,8 @@ import {
   REQUIRED_EMAIL,
   REQUIRED_STRING,
 } from 'src/constants/schemas';
+import {useAddUser} from 'src/services/userService';
+import {CommonActions} from '@react-navigation/routers';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,7 +31,7 @@ const initialValues = {
   city: '',
   country: '',
   dayOfBirth: '',
-  mobileNumber: '',
+  mobile: '',
 };
 
 const validationSchema = createValidationSchema({
@@ -38,18 +41,36 @@ const validationSchema = createValidationSchema({
   city: REQUIRED_STRING,
   country: REQUIRED_STRING,
   dayOfBirth: REQUIRED_STRING,
-  mobileNumber: REQUIRED_STRING,
+  mobile: REQUIRED_STRING,
 });
 
-const Registration = () => {
+const Registration = ({navigation}) => {
+  const {mutateAsync} = useAddUser({
+    onSuccess: res =>
+      navigation.dispatch(state => {
+        return CommonActions.reset({
+          ...state,
+          routes: [
+            {
+              key: Date.now().toString(16),
+              name: SUCCESS_REGISTRATION,
+              params: {
+                id: res.id,
+              },
+            },
+          ],
+          index: 0,
+        });
+      }),
+  });
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={() => null}
+      onSubmit={mutateAsync}
       validateOnMount
       validationSchema={validationSchema}>
       <Stack.Navigator
-        screenOptions={{...headerOptions, ...backgroundPrimary}}
+        screenOptions={{...headerOptions, ...headerBackgroundPrimary}}
         initialRouteName={PERSONAL_INFORMATION}>
         <Stack.Screen name={PERSONAL_INFORMATION} component={PersonalInfo} />
         <Stack.Screen

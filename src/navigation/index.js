@@ -13,6 +13,7 @@ import OnBoarding from 'src/screens/OnBoarding';
 import Registration from 'src/screens/RegistrationGroup/Registration';
 import SuccessRegistration from 'src/screens/SuccessRegistration';
 import UsersRegistered from 'src/screens/UsersRegistered';
+import UserDetail from 'src/screens/UserDetail';
 
 const Navigation = () => {
   return (
@@ -43,6 +44,11 @@ const RootNavigator = () => {
         name={USERS_REGISTERED}
         component={UsersRegistered}
         options={{...headerOptions}}
+      />
+      <Stack.Screen
+        name={USER_DETAIL}
+        component={UserDetail}
+        options={{...headerOptions, ...headerBack}}
       />
     </Stack.Navigator>
   );

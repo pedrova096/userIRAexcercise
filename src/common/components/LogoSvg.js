@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, {Defs, LinearGradient, Path, Stop} from 'react-native-svg';
+import {baseColor} from 'src/constants/theme';
 import styles from './styles/logoSvg.styles';
 
 const LogoSvg = ({fill = 'url(#SVGID_1_)', style}) => {
@@ -18,9 +19,8 @@ const LogoSvg = ({fill = 'url(#SVGID_1_)', style}) => {
           y1="308.73999"
           x2="115.4146"
           y2="1.447">
-          <Stop offset="0" style="stop-color:#FFFFFF" id="stop835" />
-          <Stop offset="0" style="stop-color:#F26322" id="stop837" />
-          <Stop offset="1" style="stop-color:#F37224" id="stop839" />
+          <Stop offset="0" stopColor={baseColor.bitOrangeAlt} id="stop837" />
+          <Stop offset="1" stopColor={baseColor.bitOrange} id="stop839" />
         </LinearGradient>
       </Defs>
       <Path

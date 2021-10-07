@@ -24,13 +24,16 @@ const headerOptions = {
   headerLeft: () => null,
   headerRight: () => null,
   headerBackVisible: false,
-  contentStyle: styles.backgroundLight,
   headerShadowVisible: false,
   headerTintColor: colors.light,
+  ...contentBackgroundLight,
 };
 
-export const backgroundPrimary = {
+export const headerBackgroundPrimary = {
   headerStyle: styles.backgroundPrimary,
+};
+export const contentBackgroundLight = {
+  contentStyle: styles.backgroundLight,
 };
 
 export const headerBack = {

@@ -30,7 +30,7 @@ const initialValues = {
   email: '',
   city: '',
   country: '',
-  dayOfBirth: '',
+  dateOfBirth: '',
   mobile: '',
 };
 
@@ -40,11 +40,11 @@ const validationSchema = createValidationSchema({
   email: REQUIRED_EMAIL,
   city: REQUIRED_STRING,
   country: REQUIRED_STRING,
-  dayOfBirth: REQUIRED_STRING,
+  dateOfBirth: REQUIRED_STRING,
   mobile: REQUIRED_STRING,
 });
 
-const Registration = ({navigation}) => {
+const Registration = ({route: {params}, navigation}) => {
   const {mutateAsync} = useAddUser({
     onSuccess: res =>
       navigation.dispatch(state => {

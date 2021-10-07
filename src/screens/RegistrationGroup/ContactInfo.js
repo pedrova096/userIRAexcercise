@@ -14,7 +14,7 @@ const ContactInfo = ({navigation}) => {
     <View>
       <StepperRegistration />
       <View style={styles.content}>
-        <Input label="Date of Birth" {...handleFieldProps('dayOfBirth')} />
+        <Input label="Date of Birth" {...handleFieldProps('dateOfBirth')} />
         <Input
           label="Mobile Number"
           keyboardType="number-pad"

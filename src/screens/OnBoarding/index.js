@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import Button from 'src/common/components/Button';
 import Text from 'src/common/components/Text';
-import {REGISTRATION_GROUP} from 'src/navigation/constants';
+import {REGISTRATION_GROUP, USERS_REGISTERED} from 'src/navigation/constants';
 import styles from './styles';
 
 const OnBoarding = ({navigation}) => {
@@ -22,7 +22,12 @@ const OnBoarding = ({navigation}) => {
         style={styles.registerButton}
         onPress={() => navigation.navigate(REGISTRATION_GROUP)}
       />
-      <Button fullWidth text="Go to Login" mode="outline" />
+      <Button
+        fullWidth
+        text="Check registered users"
+        mode="outline"
+        onPress={() => navigation.navigate(USERS_REGISTERED)}
+      />
     </View>
   );
 };

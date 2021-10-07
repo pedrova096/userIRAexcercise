@@ -5,14 +5,14 @@ import {
   ON_BOARDING,
   REGISTRATION_GROUP,
   SUCCESS_REGISTRATION,
+  USERS_REGISTERED,
+  USER_DETAIL,
 } from './constants';
-import headerOptions, {
-  contentBackgroundLight,
-  headerBackgroundPrimary,
-} from './header';
+import headerOptions, {contentBackgroundLight, headerBack} from './header';
 import OnBoarding from 'src/screens/OnBoarding';
 import Registration from 'src/screens/RegistrationGroup/Registration';
 import SuccessRegistration from 'src/screens/SuccessRegistration';
+import UsersRegistered from 'src/screens/UsersRegistered';
 
 const Navigation = () => {
   return (
@@ -27,17 +27,22 @@ const Stack = createNativeStackNavigator();
 const RootNavigator = () => {
   return (
     <Stack.Navigator
-      screenOptions={{headerShown: false, ...contentBackgroundLight}}
+      screenOptions={contentBackgroundLight}
       initialRouteName={ON_BOARDING}>
       <Stack.Screen
         name={ON_BOARDING}
         component={OnBoarding}
-        options={{...headerOptions, ...headerBackgroundPrimary}}
+        options={{...headerOptions}}
       />
       <Stack.Screen name={REGISTRATION_GROUP} component={Registration} />
       <Stack.Screen
         name={SUCCESS_REGISTRATION}
         component={SuccessRegistration}
+      />
+      <Stack.Screen
+        name={USERS_REGISTERED}
+        component={UsersRegistered}
+        options={{...headerOptions}}
       />
     </Stack.Navigator>
   );

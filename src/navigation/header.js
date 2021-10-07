@@ -9,6 +9,13 @@ import styles from './styles';
  * @type {import("@react-navigation/native-stack").NativeStackNavigationOptions}
  */
 
+export const headerBackgroundPrimary = {
+  headerStyle: styles.backgroundPrimary,
+};
+export const contentBackgroundLight = {
+  contentStyle: styles.backgroundLight,
+};
+
 const headerOptions = {
   headerShown: true,
   headerTitle: () => (
@@ -26,14 +33,8 @@ const headerOptions = {
   headerBackVisible: false,
   headerShadowVisible: false,
   headerTintColor: colors.light,
+  ...headerBackgroundPrimary,
   ...contentBackgroundLight,
-};
-
-export const headerBackgroundPrimary = {
-  headerStyle: styles.backgroundPrimary,
-};
-export const contentBackgroundLight = {
-  contentStyle: styles.backgroundLight,
 };
 
 export const headerBack = {
